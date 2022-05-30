@@ -1,4 +1,5 @@
 import React from "react";
+import Section from "./section/Section";
 import Profile from "./profile/Profile";
 import user from "./profile/user.json";
 import Statistics from "./statistics/Statistics";
@@ -11,6 +12,7 @@ import transactions from "./TransactionHistory/transactions.json"
 export default function App() {
   return (
     <div className="App">
+<Section title="Components">
   <Profile
         username={user.username}
         location={user.location}
@@ -21,7 +23,9 @@ export default function App() {
       <Statistics title="Upload stats" stats={data}/> 
       <Statistics stats={data} />
       <FriendList friends={friends}/>
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
+      </Section>
+  ;
 </div>
   )
 };
