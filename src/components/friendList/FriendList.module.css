@@ -1,0 +1,25 @@
+.friendList {
+  display: flex;
+  flex-direction: column;
+}
+
+.friendListItem {
+  border-radius: 3px;
+  background: white;
+  align-items: center;
+  padding: 10px;
+  display: inline-flex;
+  width: 200px;
+  margin-bottom: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.status {
+  border-radius: 50%;
+}
+.avatar {
+  padding: 10px;
+}
+.name {
+  font-weight: bold;
+}
